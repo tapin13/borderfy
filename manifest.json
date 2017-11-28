@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Borderfy",
+    "version": "1.0",
+    
+    "description": "Adds a solid red border to all webpages match silverella.ru",
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    
+    "applications": {
+        "gecko": {
+            "id": "borderfy@silverella.ru",
+            "strict_min_version": "45.0"
+        }
+    },
+    
+    "content_scripts": [
+        {
+            "matches": ["*://*.silverella.ru/*"],
+            "js": ["borderfy.js"]
+        }
+    ]
+    
+}
