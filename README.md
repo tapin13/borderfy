@@ -1,0 +1,2 @@
+# borderfy
+Firefox borderfy addon
